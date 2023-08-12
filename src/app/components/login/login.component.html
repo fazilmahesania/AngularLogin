@@ -1,0 +1,21 @@
+
+<div class="form-container  mat-elevation-z20">
+<h1 class="white-text">Login</h1>
+<form [formGroup]="loginForm">
+    <mat-form-field>
+        <mat-label>Email Address</mat-label>
+        <input matInput formControlName="email" />
+        <mat-error [hidden]="loginForm.valid && loginForm.untouched" >Please enter a correct email</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput placeholder="Password" formControlName="password" type="password"/>
+        <mat-error [hidden]="loginForm.untouched" >Password is Required</mat-error>
+
+    </mat-form-field>
+    <div class="center margin-top">
+        <button mat-raised-button color="primary" type="submit">Login</button>
+    </div>
+    <span class="center white-text margin-top">New to our Platform? <a class="signup-link" routerLink="signup">Sign Up!</a></span>
+</form>
+</div>
