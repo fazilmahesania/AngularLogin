@@ -38,3 +38,11 @@ mat-label{
 .white-text{
     color: white;
 }
+
+.link{
+    font-size: 1rem;
+    margin-left: 8px;
+    margin-right: 4px;
+    font-weight: 500;
+    color: #c2185b;
+}

@@ -9,13 +9,13 @@
     </mat-form-field>
     <mat-form-field>
         <mat-label>Password</mat-label>
-        <input matInput placeholder="Password" formControlName="password" type="password"/>
+        <input matInput formControlName="password" type="password"/>
         <mat-error [hidden]="loginForm.untouched" >Password is Required</mat-error>
 
     </mat-form-field>
     <div class="center margin-top">
         <button mat-raised-button color="primary" type="submit">Login</button>
     </div>
-    <span class="center white-text margin-top">New to our Platform? <a class="signup-link" routerLink="signup">Sign Up!</a></span>
+    <span class="center white-text margin-top">New to our Platform? <a class="link" routerLink="signup">Sign Up!</a></span>
 </form>
 </div>
